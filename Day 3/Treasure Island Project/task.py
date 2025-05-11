@@ -37,3 +37,5 @@ if direction.upper() == "LEFT":
         print("Attacked by trout. \nGame Over.")
 else:
     print("Fall into a hole.\nGame Over.")
+
+input("Press Enter to exit...")

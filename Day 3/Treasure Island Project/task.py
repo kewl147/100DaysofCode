@@ -22,11 +22,11 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
-direction = input("Do you want to Turn left or right? \n")
+direction = input("Do you want to turn left or right? \n")
 if direction.upper() == "LEFT":
     swim = input("Do you want to swim or wait? \n")
     if swim.upper() == "WAIT":
-        door = input("Choose a door, red yellow or blue. \n")
+        door = input("Choose a door: red yellow or blue. \n")
         if door.upper() == "YELLOW":
             print("You have won the game!")
         elif door.upper() == "BLUE":

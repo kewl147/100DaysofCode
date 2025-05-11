@@ -1,3 +1,25 @@
+skull = r'''      
+      ~~~~~~~~~
+    /           \
+   /             \
+  | )           ( |
+   \  /C\   /C\  /
+   /  ~~~   ~~~  \
+   \___  .^,  ___/
+    `| _______ |'
+ _   | HHHHHHH |   _
+( )  \         /  ( )
+_) \  ~~~~^~~~~ ,/ (_)
+ ~\ "\         /  /~
+    \  \     /  /
+      \  \v/  /
+       &gt;     &lt;
+      /  /^\  \
+    /  /     \  \
+_~/ "/         \  \~_
+ ) /             \ ( )
+(_)               (_)
+'''
 print(r'''
 *******************************************************************************
           |                   |                  |                     |
@@ -24,18 +46,47 @@ print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 direction = input("Do you want to turn left or right? \n")
 if direction.upper() == "LEFT":
+    print(r'''
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⣀⣤⣴⣶⣶⣶⣦⣤⣀⠀⠀⠀⣠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣶⣄⡀⠀⠀
+⠀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠀
+⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀
+⠀⣿⣿⠿⠿⠿⠿⠟⠛⠛⠛⠀⠛⠛⠛⠛⠛⠛⠛⠻⠿⠿⠿⠿⠿⠿⠿⠿⠿⠀
+⠀⠀⠀⠀⠀⠀⠀⢠⣤⣶⣶⣶⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⢿⣿⣿⣶⣶⣦⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣀⣀⣀⣤⣤⣤⣽⣿⣿⣿⣿⡿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⣤⣶⣿⣿⣿⣿⣿⣿⣿⡿⠛⠛⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠙⠛⠿⢿⣯⣭⣝⡛⠻⢿⣿⣿⣷⣶⣶⣦⣤⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠿⢶⣾⣿⣿⣿⣿⣿⣿⣿⡿⣿⣷⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣾⣿⣿⢿⣿⣿⢟⣡⣼⣿⠟⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣠⣶⣿⣿⣿⠟⣡⣾⣿⣿⣿⣿⡿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢰⣿⣿⠹⣿⣿⣄⠻⣿⣿⣿⠻⣿⣿⣦⣄⣀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠘⠛⠛⠓⠈⠛⠛⠛⠊⠛⠛⠓⠀⠙⠛⠛⠛⠛⠓⠒⠀⠀⠀⠀
+        ''')
     swim = input("Do you want to swim or wait? \n")
     if swim.upper() == "WAIT":
-        door = input("Choose a door: red yellow or blue. \n")
+        print(r'''
+        +---------+  +---------+  +---------+
+        |  RED    |  | YELLOW  |  |  BLUE   |
+        |  DOOR   |  |  DOOR   |  |  DOOR   |
+        |    __   |  |    __   |  |    __   |
+        |   |  |  |  |   |  |  |  |   |  |  |
+        +---+--+--+  +---+--+--+  +---+--+--+
+        ''')
+        door = input("Choose a door: red, yellow, or blue. \n")
         if door.upper() == "YELLOW":
             print("You have won the game!")
         elif door.upper() == "BLUE":
+            print(skull)
             print("Eaten by beasts.\nGame Over.")
         else:
+            print(skull)
             print("Burned by fire.\nGame Over.")
     else:
+        print(skull)
         print("Attacked by trout. \nGame Over.")
 else:
+    print(skull)
     print("Fall into a hole.\nGame Over.")
 
 input("Press Enter to exit...")

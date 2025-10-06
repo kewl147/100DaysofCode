@@ -19,7 +19,6 @@ bidding_finished = False
 while not bidding_finished:
     name = input("Enter your name:\n").lower()
 
-    # ✅ Validate bid input
     while True:
         bid_input = input("Enter your bid:\n$").strip()
         if bid_input.isdigit():

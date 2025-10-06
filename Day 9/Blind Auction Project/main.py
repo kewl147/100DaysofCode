@@ -1,7 +1,3 @@
-# TODO-1: Ask the user for input
-# TODO-2: Save data into dictionary {name: price}
-# TODO-3: Whether if new bids need to be added
-# TODO-4: Compare bids in dictionary
 import art
 
 print(art.logo)
@@ -33,9 +29,8 @@ while not bidding_finished:
             print("Invalid bid. Numbers only, no spaces or symbols.")
 
     bids[name] = bid
-    print("\n" * 50)  # simulate clear screen immediately after bid
+    print("\n" * 50)
 
-    # ✅ Validate yes/no input
     while True:
         more_bidders = input("Are there any other bidders? Type 'yes' or 'no':\n").lower()
         if more_bidders in ["yes", "no"]:

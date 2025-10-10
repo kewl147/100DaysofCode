@@ -7,7 +7,7 @@ def deal_card():
 
 def calculate_score(cards):
     if sum(cards) == 21 and len(cards) == 2:
-        return 0  # Blackjack
+        return 0
     while 11 in cards and sum(cards) > 21:
         cards[cards.index(11)] = 1
     return sum(cards)
